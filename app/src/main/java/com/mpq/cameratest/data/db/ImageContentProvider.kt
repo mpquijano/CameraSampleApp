@@ -38,11 +38,9 @@ class ImageContentProvider @Inject constructor(
     }
 
     fun insert(imagefile: ImageFile) {
-        TODO("Not yet implemented")
     }
 
     fun insertAll(imagelist: List<ImageFile>) {
-        TODO("Not yet implemented")
     }
 
     fun delete(imagefile: ImageFile) {
@@ -50,6 +48,5 @@ class ImageContentProvider @Inject constructor(
     }
 
     fun update(imagefile: ImageFile) {
-        TODO("Not yet implemented")
     }
 }

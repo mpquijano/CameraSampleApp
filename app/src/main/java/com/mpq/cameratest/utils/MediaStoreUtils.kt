@@ -67,7 +67,7 @@ class MediaStoreUtils(private val context: Context) {
         var fileName: String? = null
         val cursor = context.contentResolver.query(uri, null, null, null, null)
         if(cursor != null){
-            if(cursor.moveToFirst()){
+            if(cursor.count != 0 && cursor.moveToFirst()){
                 fileName = cursor?.getString(cursor.getColumnIndex(OpenableColumns.DISPLAY_NAME))
             }
             cursor.close()
